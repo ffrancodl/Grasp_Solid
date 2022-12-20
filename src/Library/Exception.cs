@@ -4,8 +4,10 @@ using System.Collections.Generic;
 
 public class EmptyException : Exception
 {
-    
-    public EmptyException(string mensaje) : base (mensaje)
+    /// <summary>
+    /// excepcion en caso de que la lista esté vacia
+    /// </summary>
+    public EmptyException (string mensaje) : base (mensaje)
     {
         
     }

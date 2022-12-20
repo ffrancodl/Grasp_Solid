@@ -2,15 +2,15 @@ using System;
 using System.Collections;
 using System.IO;
 
-
 namespace Full_GRASP_And_SOLID.Library
 {
 
     public class FilePrinter : IPrinter
     {
-        public void PrintBuilding(Building building)
+        
+        public void PrintBuilding(IStringConverter stringConverter)
         {
-            File.WriteAllText("Building.txt", building.PrintBuilding());
+            File.WriteAllText("Building.txt", stringConverter.GetTextToPrint());
         }
     }
 }

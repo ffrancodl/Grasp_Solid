@@ -5,9 +5,6 @@ using System.IO;
 
 namespace Full_GRASP_And_SOLID.Library
 {
-    /// <summary>
-    /// Clase que representa una tarea.
-    /// </summary>
     public class Task
     {
         public Task(Supply material, double quantity, Tool equipment, int time)
@@ -17,14 +14,8 @@ namespace Full_GRASP_And_SOLID.Library
             this.Time = time;
             this.Equipment = equipment;
         }
-
-        
-        public Supply Material { get; set; }
-
-   
-        public double Quantity { get; set; }
-
-        
+         public Supply Material { get; set; }
+         public double Quantity { get; set; }
         public int Time { get; set; }
 
         public Tool Equipment { get; set; }

@@ -1,18 +1,17 @@
 using System;
 using System.Collections;
-using System.Collections.Generic;
-
 
 namespace Full_GRASP_And_SOLID.Library
 {
-    
 
     public class ConsolePrinter : IPrinter
     {
-        public void PrintBuilding(Building building)
+        
+        public void PrintBuilding(IStringConverter stringConverter)
         {
-            Console.WriteLine(building.PrintBuilding());
+            Console.WriteLine(stringConverter.GetTextToPrint());
         }
         
     }
+
 }

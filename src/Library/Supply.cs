@@ -7,8 +7,7 @@ namespace Full_GRASP_And_SOLID.Library
 {
         public class Supply
     {
-        
-        public Supply(string description, double unitCost)
+        public Supply (string description, double unitCost)
         {
             this.Description = description;
             this.UnitCost = unitCost;

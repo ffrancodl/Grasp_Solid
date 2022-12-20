@@ -5,6 +5,10 @@ using System.Collections;
 using System.Collections.Generic;
 
 
+/// <summary>
+/// esta clase imprime en consola y en archivos
+/// </summary>
+
 namespace Full_GRASP_And_SOLID.Library
 {
     public enum Destination
@@ -17,15 +21,15 @@ namespace Full_GRASP_And_SOLID.Library
     public class AllInOnePrinter
     {
     
-        public void PrintRecipe(Building building, Destination destination)
+        public void PrintBuilding(Building building, Destination destination)
         {
             if (destination == Destination.Console) 
             {
-                Console.WriteLine(building.PrintBuilding());
+                Console.WriteLine(building.GetTextToPrint());
             }
             else
             {
-                File.WriteAllText("Building.txt", building.PrintBuilding());
+                File.WriteAllText("Building.txt", building.GetTextToPrint());
             }
         }
 

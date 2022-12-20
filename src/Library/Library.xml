@@ -4,9 +4,9 @@
         <name>Library</name>
     </assembly>
     <members>
-        <member name="T:Full_GRASP_And_SOLID.Library.Task">
+        <member name="M:EmptyException.#ctor(System.String)">
             <summary>
-            Clase que representa una tarea.
+            excepcion en caso de que la lista esté vacia
             </summary>
         </member>
     </members>

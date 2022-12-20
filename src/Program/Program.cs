@@ -17,15 +17,26 @@ namespace Full_GRASP_And_SOLID
         {
             PopulateCatalogs();
 
+            /// <summary>
+            /// instanciamos la interfaz
+            /// </summary>
             IPrinter consolePrinter = new ConsolePrinter();
             IPrinter filePrinter = new FilePrinter();
+            
+            /// <summary>
+            /// creamos edificio
+            /// </summary>
 
             Building tower = new Building("Tower");
 
             tower.AddTask(GetProduct("Cemento"), 100, GetEquipment("Hormigonera"), 120);
             tower.AddTask(GetProduct("Arena"), 200, GetEquipment("Hormigonera"), 120);
             tower.AddTask(GetProduct("Tabla"), 50, GetEquipment("Martillo"), 15);
-            
+
+            /// <summary>
+            /// imprimimos
+            /// </summary>
+
             consolePrinter.PrintBuilding(tower);
             filePrinter.PrintBuilding(tower);
         }
@@ -35,7 +46,6 @@ namespace Full_GRASP_And_SOLID
             AddProductToCatalog("Cemento", 100);
             AddProductToCatalog("Arena", 200);
             AddProductToCatalog("Tabla", 300);
-
             AddEquipmentToCatalog("Hormigonera", 1000);
             AddEquipmentToCatalog("Martillo", 2000);
         }
