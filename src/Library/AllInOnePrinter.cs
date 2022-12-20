@@ -1,3 +1,4 @@
+
 using System;
 using System.IO;
 using System.Collections;
@@ -8,7 +9,6 @@ namespace Full_GRASP_And_SOLID.Library
 {
     public enum Destination
     {
-    
         Console,
         File
     }
